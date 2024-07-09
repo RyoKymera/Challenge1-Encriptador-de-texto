@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="body">
+    <header></header>
+
+    <main class="principal_main">
+        <section class="Seccion__Iz">
+            <div class="Seccion__Iz__Encabezado">
+                <img class="Seccion__Iz__Encabezado__imagen" src="./styles/img/Logo.png" alt="Logo de Alura">
+                <p class="Seccion__Iz__Encabezado__texto">Desarrollado por Diego Mateus</p>
+            </div>
+            
+            <div class="Seccion__Iz__Usuario">
+                <h1 class="Seccion__Iz__Usuario__titulo">Encriptador de Texto</h1>
+                <textarea class="Seccion__Iz__Usuario__texto" name="TextoUsuario" id="TextoUsuario" placeholder="Ingrese el texto aquí"></textarea placeholder="Ingrese el texto aquí">
+
+                <div class="Seccion__Iz__PiePagina">
+                    <img src="./styles/img/Vector.svg" alt="Signo de exclamación">
+                    <p class="Seccion__Iz__PiePagina__texto">Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="Botones">
+                        <button class="Botones__Encriptar" onclick="EncriptarMensaje ();">Encriptar</button>
+                        <button class="Botones__Desencriptar" onclick="DesencriptarMensaje ();">Desencriptar</button>
+                </div> 
+            </div>      
+        </section>
+
+        <section class="Seccion__Der">
+            <img class="Seccion__Der__imagen" id="Seccion__Der__imagen" src="./styles/img/Muñeco.svg" alt="Personaje de rodillas analizando un diamante con una lupa">
+            
+            <div class="Seccion__Der__textos" id="Seccion__Der__textos">
+                <p class="Seccion__Der__textos__1">Ningún mensaje fue encontrado</p>
+                <p class="Seccion__Der__textos__2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div id="Mensaje__Encriptado" class="Seccion__Der__textos__ocultos" style="display: none;">
+                <p id="Mensaje__Encriptado__titulo" class="Seccion__Der__textos__3"></p>
+                <textarea id="Mensaje__Encriptado__Resultado" class="Seccion__Der__textos__4"></textarea>
+                <button id="copyButton" class="Botones__Copiar" onclick="CopiarMensaje();">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+    <footer></footer>
+</body>
+
+<script src="./app.js"></script>
+</html>

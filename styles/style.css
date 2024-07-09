@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --Fuente-Inter:"Inter", sans-serif;
+
+    --Color-principal: #F3F5FC;
+    --Color-Secundario: #0A3871;
+    --Color-terciario: #FFFFFF;
+    --Color-boton-2: #D8DFE8;
+    --Color-hover-1: #114c94;
+    --Color-hover-2: #e5e6e9;
+    --Color-hover-3: #f3f3f3;
+    --Color-sombra-leve: #d8d8d87e;
+    
+    --Color-fuentes-claras: #495057;
+    --Color-fuentes-oscuras: #343A40;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background-color: var(--Color-principal);
+    box-sizing: border-box;
+}
+
+.principal_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Seccion__Iz{
+    width: 65%;
+    padding: 0% 0% 5% 0%;
+}
+
+.Seccion__Iz__Encabezado{
+    display: flex;
+    padding: 3%;
+    align-items: center;
+}
+
+.Seccion__Iz__Encabezado__texto{
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    color: #0A3871;
+    font-size: 1rem;
+}
+
+.Seccion__Iz__Usuario{
+    display: flex;
+    padding: 5% 8% 2% 25%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Seccion__Iz__Usuario__titulo{
+    font-family: var(--Fuente-Inter);
+    color: var(--Color-Secundario);
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0% 0% 4% 0%;
+}
+
+.Seccion__Iz__Usuario__texto{
+    padding: 1rem;
+    font-family: var(--Fuente-Inter);
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--Color-fuentes-oscuras);
+    width: 100% 80%;
+    border-radius: 0.5rem;
+    border-color: var(--Color-Secundario);
+    height: 35rem;
+    width: 19rem 35rem;
+    resize: none;
+    background-color: var(--Color-terciario);
+}
+
+.Seccion__Iz__PiePagina{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: left;
+}
+
+.Seccion__Iz__PiePagina__texto{
+    font-family: var(--Fuente-Inter);
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--Color-fuentes-claras);
+}
+
+.Botones{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.Botones__Encriptar{
+    font-family: var(--Fuente-Inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Color-terciario);
+    background-color: var(--Color-Secundario);
+    border: 1px solid var(--Color-Secundario);
+    border-radius: 1rem;
+    /*padding: 0.75rem 3.8rem;*/
+    height: 3rem;
+    width: 20rem;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.Botones__Encriptar:hover{
+    background-color: var(--Color-hover-1);
+}
+
+.Botones__Desencriptar{
+    font-family: var(--Fuente-Inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Color-Secundario);
+    background-color: var(--Color-boton-2);
+    border: 1px solid var(--Color-Secundario);
+    border-radius: 1rem;
+    /*padding: 0.75rem 3.8rem;*/
+    height: 3rem;
+    width: 20rem;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.Botones__Desencriptar:hover{
+    background-color: var(--Color-hover-2);
+}
+
+.Seccion__Der{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 53rem;
+    background-color: var(--Color-terciario);
+    border-radius: 2rem;
+    margin: 4% 10% 4% 0%;
+    padding: 2%;
+    gap: 1rem;
+    position: relative;
+}
+
+.Seccion__Der::after{
+    /*Esta es la sombra de la ventana derecha*/
+    position:absolute;
+    border-radius: 2rem;
+    top: 1.5rem;
+    left: 0px;
+    content: ' ';
+    background-color: var(--Color-sombra-leve);
+    height: 100%;
+    width: 100%;
+    filter: blur(7px);
+    z-index: -1;
+}
+
+.Seccion__Der__imagen{
+    width: 90%;
+}
+
+.Seccion__Der__textos__1{
+    font-family: var(--Fuente-Inter);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--Color-fuentes-oscuras);
+    text-align: center;
+    padding: 0% 0% 5% 0%;
+}
+
+.Seccion__Der__textos__2{
+    font-family: var(--Fuente-Inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Color-fuentes-claras);
+    text-align: center;
+}
+
+.Seccion__Der__textos__3{
+    font-family: var(--Fuente-Inter);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--Color-Secundario);
+    text-align: center;
+    padding: 0% 0% 5% 0%;
+    margin: 2rem 0 0rem 0;
+}
+
+.Seccion__Der__textos__4{
+    font-family: var(--Fuente-Inter);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--Color-fuentes-oscuras);
+    padding: 5rem 3rem 7rem 3rem;
+    border: 0;
+    border-radius: 0.5rem;
+    align-items: center;
+    text-align: center;
+    resize: none;
+}
+
+.Botones__Copiar{
+    font-family: var(--Fuente-Inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Color-Secundario);
+    background-color: var(--Color-terciario);
+    border: 1px solid var(--Color-Secundario);
+    border-radius: 1rem;
+    padding: 0.75rem 3.8rem;
+    height: 3rem;
+    width: 20rem;
+}
+
+.Botones__Copiar:hover{
+    background-color: var(--Color-hover-3);
+}
+
+.Seccion__Der__textos__ocultos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .principal_main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Seccion__Iz{
+        width: 95%;
+        padding: 0%;
+    }
+
+    .Seccion__Iz__Usuario__texto{
+        height: 24rem;
+    }
+
+    .Seccion__Iz__Usuario{
+        padding: 10%;
+    }
+
+    .Seccion__Der{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 4% 4% 4% 4%;
+        margin: 0;
+        height: auto;
+        width: 70%;
+    }
+
+    .Seccion__Der__imagen{
+        display: none;
+    }
+
+    .Botones__Copiar{
+        width: 100%;
+        height: auto;
+    }
+
+    .Seccion__Der__textos__ocultos{
+        width: 100%;
+        height: auto;
+    }
+
+    .Seccion__Der__textos__4{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: justify;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 375px) {  
+    
+    .Seccion__Iz__Encabezado{
+        align-items: center;
+    }
+
+    .Botones{
+        flex-direction: column;
+    }
+
+    .Botones__Encriptar{
+        width: 100%;
+    }
+
+    .Botones__Desencriptar{
+        width: 100%;
+    }
+
+    .Seccion__Der{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 4%;
+        margin: 0;
+        height: auto;
+        width: 70%;
+    }
+
+    .Seccion__Der__imagen{
+        display: none;
+    }
+
+    .Seccion__Iz__Usuario__texto{
+        height: 15rem;
+    }
+
+    .Seccion__Der__textos__ocultos{
+        width: 100%;
+        height: auto;
+    }
+
+    .Seccion__Der__textos__4{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+}
